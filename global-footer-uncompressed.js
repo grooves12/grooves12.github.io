@@ -289,6 +289,7 @@ jQuery('#body_add_drop .table2-sub1,#body_add_drop .table2-sub2').find('td a:con
 jQuery('#body_add_drop .table2-sub1,#body_add_drop .table2-sub2').find('td a:contains("Pts")').closest('td').addClass('waiv-pts');
 jQuery('#body_add_drop .table2-sub1,#body_add_drop .table2-sub2').find('td a:contains("Proj")').closest('td').addClass('waiv-proj');
 jQuery('#body_add_drop .table2-sub1,#body_add_drop .table2-sub2').find('td:contains("Inj")').closest('td').addClass('waiv-inj');
+jQuery('#body_add_drop .table2-sub2').find('td:contains("Ros")').closest('td').addClass('waiv-ros');
 
 // Last TD - add scroll to it and redo colspan - OLD VERSION
 //jQuery('tr.head-th td:last-of-type').addClass('scroll-spacer');
@@ -328,33 +329,8 @@ jQuery('#body_add_drop .table3').parent('td').addClass('table3-td');
 jQuery('#body_add_drop .table3-td + td').remove();
 jQuery('#body_add_drop .table3-td').attr('colspan',4);
 jQuery('#body_add_drop table.table3 tr:last-of-type td[colspan]').attr('colspan',3).addClass('adddrop-lasttd');
-jQuery('#body_add_drop .adddrop-lasttd').prev().remove();
-jQuery('#body_add_drop .adddrop-lasttd').next().remove();
-
-if(document.getElementById("body_add_drop")) {
-	function hideAllFilters(toggleThis){
-		if(toggleThis===undefined) {
-			jQuery('#custom-filter-name').hide();
-			jQuery('#custom-filter-nfl').hide();
-			jQuery('#custom-filter-pos').hide();
-		} else {
-			if(toggleThis==="#custom-filter-name") {jQuery('#custom-filter-name').toggle(); jQuery('#custom-filter-nfl').hide(); jQuery('#custom-filter-pos').hide();}
-			if(toggleThis==="#custom-filter-nfl")  {jQuery('#custom-filter-name').hide(); jQuery('#custom-filter-nfl').toggle(); jQuery('#custom-filter-pos').hide();}
-			if(toggleThis==="#custom-filter-pos")  {jQuery('#custom-filter-name').hide(); jQuery('#custom-filter-nfl').hide(); jQuery('#custom-filter-pos').toggle();}
-		}
-	}
-	//MOVE FILTERS TO HEADER
-	nameFilter = '<div id="custom-filter-name" style="display:none; overflow:visible!important; position:absolute; min-width:auto; left:-45px; top:-25px; z-index:1">'+jQuery('#add_filt_name').clone().wrap('<p>').parent().html()+'</div>';
-	nflFilter  = '<div id="custom-filter-nfl" style="display:none; overflow:visible!important; position:absolute; min-width:auto; left:-25px; top:-25px; z-index:1">'+jQuery('#add_filt_nfl').clone().wrap('<p>').parent().html()+'</div>';
-	posFilter  = '<div id="custom-filter-pos" style="display:none; overflow:visible!important; position:absolute; min-width:auto; left:-25px; top:-25px; z-index:1">'+jQuery('#add_filt_pos').clone().wrap('<p>').parent().html()+'</div>';
-	nflFilter  = nflFilter.replace( "picker_filter('add')","picker_filter('add');hideAllFilters()");
-	posFilter  = posFilter.replace( "picker_filter('add')","picker_filter('add');hideAllFilters()");
-	jQuery('#body_add_drop .table2-sub1 tr.head-th td.waiv-name').append('<span style="position:relative">'+nameFilter+'<span style="padding-left:6px;cursor:pointer"><i class="fa fa-search" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-name\')"></i></span></span>');
-	jQuery('#body_add_drop .table2-sub1 tr.head-th td.waiv-team').append('<span style="position:relative">'+nflFilter +'<span style="padding-left:3px;cursor:pointer"><i class="fa fa-filter" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-nfl\' )"></i></span></span>');
-	jQuery('#body_add_drop .table2-sub1 tr.head-th td.waiv-pos').append('<span style="position:relative">'+posFilter +'<span style="padding-left:3px;cursor:pointer"><i class="fa fa-filter" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-pos\' )"></i></span></span>');
-	jQuery('#body_add_drop .table2-sub1 td:contains("Filter by")').html("");
-	//jQuery('#body_add_drop .table2-sub1 td:contains("Locked Player")').html('* Locked Player (<a href="locked_players?L='+league_id+'" target="_blank">See Details</a>)');
-}
+//jQuery('#body_add_drop .adddrop-lasttd').prev().remove();
+//jQuery('#body_add_drop .adddrop-lasttd').next().remove();
 
 // ADD CLASSES TO ADD-DROP FIRST TABLE
 jQuery('#waiver_request_list').addClass('waiver-settings');
@@ -461,33 +437,6 @@ jQuery('#body_options_52 .make-pick-table').find('td a:contains("Salary")').clos
 jQuery('#body_options_52 .make-pick-table').find('td a:contains("Pts")').closest('td').addClass('waiv-pts');
 jQuery('#body_options_52 .make-pick-table').find('td a:contains("Proj")').closest('td').addClass('waiv-proj');
 jQuery('#body_options_52 .make-pick-table').find('td:contains("Inj")').closest('td').addClass('waiv-inj');
-
-if(document.getElementById("body_options_52")) {
-	function hideAllFilters(toggleThis){
-		if(toggleThis===undefined) {
-			//jQuery('#custom-filter-name').hide();
-			//jQuery('#custom-filter-nfl').hide();
-			//jQuery('#custom-filter-pos').hide();
-		} else {
-			if(toggleThis==="#custom-filter-name") {jQuery('#custom-filter-name').toggle(); jQuery('#custom-filter-nfl').hide(); jQuery('#custom-filter-pos').hide();}
-			if(toggleThis==="#custom-filter-nfl")  {jQuery('#custom-filter-name').hide(); jQuery('#custom-filter-nfl').toggle(); jQuery('#custom-filter-pos').hide();}
-			if(toggleThis==="#custom-filter-pos")  {jQuery('#custom-filter-name').hide(); jQuery('#custom-filter-nfl').hide(); jQuery('#custom-filter-pos').toggle();}
-		}
-	}
-	//MOVE FILTERS TO HEADER
-	nameFilter = '<div id="custom-filter-name" style="display:none; overflow:visible!important; position:absolute; min-width:auto; left:-45px; top:-25px; z-index:1">'+jQuery('#picker_filt_name').clone().wrap('<p>').parent().html()+'</div>';
-	nflFilter  = '<div id="custom-filter-nfl" style="display:none; overflow:visible!important; position:absolute; min-width:auto; left:-25px; top:-25px; z-index:1">'+jQuery('#picker_filt_nfl').clone().wrap('<p>').parent().html()+'</div>';
-	posFilter  = '<div id="custom-filter-pos" style="display:none; overflow:visible!important; position:absolute; min-width:auto; left:-25px; top:-25px; z-index:1">'+jQuery('#picker_filt_pos').clone().wrap('<p>').parent().html()+'</div>';
-	nflFilter  = nflFilter.replace( "picker_filter('picker')","picker_filter('picker');hideAllFilters()");
-	posFilter  = posFilter.replace( "picker_filter('picker')","picker_filter('picker');hideAllFilters()");
-	jQuery('#body_options_52 .make-pick-table tr.head-th td.waiv-name').append('<span style="position:relative">'+nameFilter+'<span style="padding-left:6px;cursor:pointer"><i class="fa fa-search" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-name\')"></i></span></span>');
-	jQuery('#body_options_52 .make-pick-table tr.head-th td.waiv-team').append('<span style="position:relative">'+nflFilter +'<span style="padding-left:3px;cursor:pointer"><i class="fa fa-filter" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-nfl\' )"></i></span></span>');
-	jQuery('#body_options_52 .make-pick-table tr.head-th td.waiv-pos').append('<span style="position:relative">'+posFilter +'<span style="padding-left:3px;cursor:pointer"><i class="fa fa-filter" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-pos\' )"></i></span></span>');
-	jQuery('#body_options_52 .table2-sub1 td:contains("Filter by")').html("");
-}
-
-jQuery('.mobile-view.leftS').find('tr:contains("Filter by:")').remove();
-
 
 
 // Right side option player drop list - optional message box
