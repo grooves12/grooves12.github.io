@@ -1171,7 +1171,7 @@ table.no-borderspacing {
     border-spacing: 0
 }
 
-/*table,*/
+table,
 .report,
 .homepagemessage {
     width: 100%;
