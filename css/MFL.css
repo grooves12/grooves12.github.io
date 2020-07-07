@@ -6716,22 +6716,23 @@ th.ls_projections {
 
 #LS_AwayScore span,
 #LS_HomeScore span {
-    border-width: 1px;
+/*   border-width: 1px;
     border-style: solid;
     text-align: center;
     position: relative;
     width: 1%;
     display: table-cell;
-    font-weight: 600;
-    font-size: 40px;
-    text-decoration: none;
+    font-weight: 600;*/
+    font-size: 48px;
+ /*   text-decoration: none;
     min-width: 30px;
     line-height: normal;
     cursor: default;
     border-width: 1px;
-    border-style: solid
+    border-style: solid*/
 }
 
+/*
 #LS_AwayScore span:before,
 #LS_HomeScore span:before {
     content: "";
@@ -6782,6 +6783,7 @@ th.ls_projections {
     right: 0;
     z-index: 1
 }
+*/
 
 .MFLMainScoreboard,
 #LS_AwayScore span a:after,
