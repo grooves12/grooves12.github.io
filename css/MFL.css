@@ -10727,3 +10727,13 @@ caption span {
 #MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer .MFLPlayerPopupTabContent {
     height: 270px;
 }
+
+@media only screen and (max-width:32.000em) {
+	#standings .gb, #standings .strk, #standings .pa, #standings .bbidbalance, #body_home #power_rank .efficiency, #body_home #power_rank .total_potential_points, #body_home #power_rank .minpf, #body_home #power_rank .maxpf, #body_home #power_rank .all_play_w, #body_home #power_rank .all_play_l, #body_home #power_rank .all_play_t, #body_home #power_rank tr:nth-child(1) th{
+		display: none;
+	}
+        .franchiseicon {
+        max-width: 65px;
+        min-width: 65px;
+        }	
+}
