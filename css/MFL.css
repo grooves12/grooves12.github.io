@@ -6828,7 +6828,7 @@ div.ls_team_points {
 
 #LS_TopTableHolder .LS_MainScoreboard td {
     border: 1px solid #eee;
-    background: #eee
+/*    background: #eee */
 }
 
 #LS_TopTableHolder td.LS_ScoreboardTitle,
