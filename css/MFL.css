@@ -1297,7 +1297,7 @@ caption.withfranchiseicon .ownername {
 }
 
 th {
-    background: var(--th-bg, #080e25);
+    background: var(--make-white, #080e25);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -1310,7 +1310,7 @@ th a,
 th a:link,
 th a:active,
 th a:visited {
-    color: var(--make-white, var(--accent, #fff))
+    color: var var(--accent, #fff)
 }
 
 th a:hover,
@@ -7200,7 +7200,7 @@ div.ls_team_points {
     --table-separate: 2px solid #ddd;
     --dash-x-boxes: #999;
     --highlight-separate: 1px solid #eee;
-    --table-header-bg: var(--th-bg, #080e25);
+/*    --table-header-bg: var(--th-bg, #080e25);*/
     --table-header-bg-fixed: var(--th-bg, #080e25);
     --defunct-bg-text: #fff;
     --defunct-bg: red;
