@@ -5696,9 +5696,9 @@ a.subhead {
 #body_add_drop table .table3 {table-layout: unset;}
 
 
-/* #body_add_drop .table2 table td {
+/*#body_add_drop .table2 table td {
     width: auto;
-    font-size: 12px */
+    font-size: 12px 
 }*/
 
 #body_add_drop .table2 div {
