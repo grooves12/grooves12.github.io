@@ -1310,7 +1310,7 @@ th a,
 th a:link,
 th a:active,
 th a:visited {
-    color: var var(--accent, #fff)
+    color: var(--accent, #fff)
 }
 
 th a:hover,
