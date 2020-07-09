@@ -6709,10 +6709,10 @@ th.ls_projections {
     padding: 0
 }
 
-#LS_AwayScore span.blank a,
+/*#LS_AwayScore span.blank a,
 #LS_HomeScore span.blank a {
     padding: 4px
-}
+}*/
 
 #LS_AwayScore span,
 #LS_HomeScore span {
