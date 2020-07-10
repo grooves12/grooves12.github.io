@@ -5621,9 +5621,8 @@ a.subhead {
 
 #body_add_drop #waiver_request_list td.action a:before {
     font-family: "FontAwesome";
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 3px;
-    font-size: 14px
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"]:before {
