@@ -1297,7 +1297,7 @@ caption.withfranchiseicon .ownername {
 }
 
 th {
-    background: var(--make-white, #080e25);
+    background: var(--accent, #080e25);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -1310,7 +1310,7 @@ th a,
 th a:link,
 th a:active,
 th a:visited {
-    color: var(--accent, #fff)
+    color: var(--make-white, #fff)
 }
 
 th a:hover,
