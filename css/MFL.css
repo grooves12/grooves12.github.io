@@ -1297,7 +1297,7 @@ caption.withfranchiseicon .ownername {
 }
 
 th {
-    background: var(--accent, #080e25);
+    background: var(--main, #080e25);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
