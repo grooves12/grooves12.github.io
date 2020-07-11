@@ -7199,7 +7199,7 @@ div.ls_team_points {
     --table-separate: 2px solid #ddd;
     --dash-x-boxes: #999;
     --highlight-separate: 1px solid #eee;
-/*    --table-header-bg: var(--th-bg, #080e25);*/
+    --table-header-bg: var(--th-bg, #080e25);
     --table-header-bg-fixed: var(--th-bg, #080e25);
     --defunct-bg-text: #fff;
     --defunct-bg: red;
