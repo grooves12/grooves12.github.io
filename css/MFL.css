@@ -3012,8 +3012,8 @@ ul.MFLPlayerPopupTab li a:hover {
 }
 
 footer {
-    display: none;
-    position: absolute;
+/*    display: none;
+    position: absolute;*/
     left: 0;
     bottom: 0;
     height: auto;
