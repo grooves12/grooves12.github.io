@@ -1,12 +1,14 @@
-jQuery.get("//nitrografixx.com/SVGICONS/images/sprites.svg?version=2", function(data) {
+jQuery.get("//nitrografixx.com/SVGICONS/images/sprites.svg?version=1", function(data) {
   var div = document.createElement("div");
   div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
   document.body.insertBefore(div, document.body.childNodes[0]);
 });
 
+jQuery('.pageheader').remove();
+
 // REMOVE MENU ITEMS
-jQuery('.pageheader,.myfantasyleague_menu li a:empty').remove();
-jQuery('div.myfantasyleague_menu ul li:empty').remove();
+jQuery('.myfantasyleague_menu ul li:contains("This Page")').remove();
+
 
 // MFL Skin Selector for all my personal skins
 function setTheme(themeName) {	localStorage.setItem('theme_'+year+'_'+league_id, themeName);document.documentElement.className = themeName;}
