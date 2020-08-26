@@ -33,16 +33,10 @@ jQuery(".ThemeSwith_overlay").on("click", function (){
 $("#myMFLSkinSelection,.ThemeSwith_overlay").css("display","none");
 });
 
-
-// LINKS IN MAIN MENU - SCORING - ROSTER - CUSTOM ABILITIES
-jQuery('ul li.mm-forcommissioners ul').prepend('<li><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/home/' + league_id + '?MODULE=MESSAGE' + SetHPMability + '">Custom Abilities</a></li>');
-jQuery('.myfantasyleague_menu ul li:contains("Franchise") a:contains("Rosters")').attr("href", baseURLDynamic + "/" + year + "/home/" + league_id + "?MODULE=MESSAGE" + SetHPMroster );
-jQuery(document).ready(function () {jQuery('#hsubmenu li a:contains("Rosters")').attr("href", baseURLDynamic + "/" + year + "/home/" + league_id + "?MODULE=MESSAGE" + SetHPMroster );});
-
 jQuery('.myfantasyleague_menu ul,.MFLSkinSelection').css('visibility','visible');
 
 // ADD LOGIN TO MENU
-//jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"></ul></li>');
+jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"></ul></li>');
 
 // MIKE ADDED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE - SEE BELOW FOR MORE EDITS DUE TO THIS
 jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"><li class="user-login"><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/login?L=' + league_id + '">Login to league</a></li></ul></li>');
