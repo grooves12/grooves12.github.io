@@ -39,10 +39,6 @@ jQuery(document).ready(function () {jQuery('#hsubmenu li a:contains("Rosters")')
 
 jQuery('.myfantasyleague_menu ul,.MFLSkinSelection').css('visibility','visible');
 
-
-// ADD LOGIN TO MENU
-//jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"></ul></li>');
-
 // MIKE ADDED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE - SEE BELOW FOR MORE EDITS DUE TO THIS
 jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"><li class="user-login"><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/login?L=' + league_id + '">Login to league</a></li></ul></li>');
 
@@ -52,13 +48,7 @@ jQuery(document).ready(function() {
         url: url,
         success: function(data) {
             jQuery(data).find("#welcome td a").each(function() {
-
-				// MIKE REMOVED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE
-				//if($(this).text().indexOf("create")<0) jQuery('#slide-menu-login ul').append('<li><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/login?L=' + league_id + '">Login</a></li>');
-
-				// MIKE ADDED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE
 				jQuery('#slide-menu-login ul .user-login').remove();
-
                 jQuery('#slide-menu-login ul').append('<li><a class="no-sub" href="' + jQuery(this).attr("href") + '">' + $(this).text() + '</a></li>');
             });
         },
