@@ -36,7 +36,7 @@ $("#myMFLSkinSelection,.ThemeSwith_overlay").css("display","none");
 jQuery('.myfantasyleague_menu ul,.MFLSkinSelection').css('visibility','visible');
 
 // ADD LOGIN TO MENU
-jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"></ul></li>');
+//jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"></ul></li>');
 
 // MIKE ADDED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE - SEE BELOW FOR MORE EDITS DUE TO THIS
 jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"><li class="user-login"><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/login?L=' + league_id + '">Login to league</a></li></ul></li>');
