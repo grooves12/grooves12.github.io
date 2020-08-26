@@ -52,7 +52,13 @@ jQuery(document).ready(function() {
         url: url,
         success: function(data) {
             jQuery(data).find("#welcome td a").each(function() {
+
+				// MIKE REMOVED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE
+				//if($(this).text().indexOf("create")<0) jQuery('#slide-menu-login ul').append('<li><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/login?L=' + league_id + '">Login</a></li>');
+
+				// MIKE ADDED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE
 				jQuery('#slide-menu-login ul .user-login').remove();
+
                 jQuery('#slide-menu-login ul').append('<li><a class="no-sub" href="' + jQuery(this).attr("href") + '">' + $(this).text() + '</a></li>');
             });
         },
