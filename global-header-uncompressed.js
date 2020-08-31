@@ -5,8 +5,8 @@ jQuery.get("//nitrografixx.com/SVGICONS/images/sprites.svg?version=2", function(
 });
 
 // REMOVE MENU ITEMS
-jQuery('.pageheader,.myfantasyleague_menu li a:empty').remove();
-jQuery('div.myfantasyleague_menu ul li:empty').remove();
+//jQuery('.pageheader,.myfantasyleague_menu li a:empty').remove();
+//jQuery('div.myfantasyleague_menu ul li:empty').remove();
 
 // MFL Skin Selector for all my personal skins
 function setTheme(themeName) {	localStorage.setItem('theme_'+year+'_'+league_id, themeName);document.documentElement.className = themeName;}
