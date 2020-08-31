@@ -5753,10 +5753,10 @@ a.subhead {
     background: #fff
 }
 
-.mobile-view.leftS .head-th a,
+/*.mobile-view.leftS .head-th a,
 .mobile-view.leftS .head-th {
     color: var(--accent, #B82601)
-}
+}*/
 
 .custom-draft #destination_list {
     width: 100%
