@@ -4284,9 +4284,9 @@ div.mobile-wrap:empty {
     padding: 0
 }
 
-/*#body_login td[width="175"] {
+#body_login td[width="175"] {
     display: none
-}*/
+}
 
 #owner_activity td.franchisename {
     font-family: 'Roboto', sans-serif
