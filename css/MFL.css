@@ -5820,10 +5820,10 @@ a.subhead {
     text-align: center !important
 }
 
-.mobile-view.leftS>table,
+/*.mobile-view.leftS>table,
 .mobile-view.leftS table#picker {
     table-layout: fixed
-}
+}*/
 
 .custom-draft .head-th td:nth-child(1),
 .mobile-view.leftS table#picker td:nth-child(1) {
