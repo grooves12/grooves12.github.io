@@ -6335,7 +6335,7 @@ td::-webkit-scrollbar {
     font-family: 'Roboto Condensed', sans-serif
 }
 
-#body_ajax_ls #container-wrap,
+/*#body_ajax_ls #container-wrap,
 #body_ajax_ls table[style="margin-top:4px"],
 #body_ajax_ls table#ls_ticker_tab_id,
 #body_ajax_ls table#ls_ticker_tab_id+p,
@@ -6345,7 +6345,7 @@ td::-webkit-scrollbar {
 #body_ajax_ls #myNavigationHolder,
 #body_ajax_ls table.report+div.mobile-wrap {
     visibility: hidden
-}
+}*/
 
 #body_ajax_ls .ls-boxscore {
     white-space: nowrap
