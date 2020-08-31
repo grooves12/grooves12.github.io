@@ -1,14 +1,12 @@
-jQuery.get("//nitrografixx.com/SVGICONS/images/sprites.svg?version=1", function(data) {
+jQuery.get("//nitrografixx.com/SVGICONS/images/sprites.svg?version=2", function(data) {
   var div = document.createElement("div");
   div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
   document.body.insertBefore(div, document.body.childNodes[0]);
 });
 
-jQuery('.pageheader').remove();
-
 // REMOVE MENU ITEMS
-jQuery('.myfantasyleague_menu ul li:contains("This Page")').remove();
-
+jQuery('.pageheader,.myfantasyleague_menu li a:empty').remove();
+jQuery('div.myfantasyleague_menu ul li:empty').remove();
 
 // MFL Skin Selector for all my personal skins
 function setTheme(themeName) {	localStorage.setItem('theme_'+year+'_'+league_id, themeName);document.documentElement.className = themeName;}
@@ -33,10 +31,13 @@ jQuery(".ThemeSwith_overlay").on("click", function (){
 $("#myMFLSkinSelection,.ThemeSwith_overlay").css("display","none");
 });
 
-jQuery('.myfantasyleague_menu ul,.MFLSkinSelection').css('visibility','visible');
 
-// ADD LOGIN TO MENU
-//jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"></ul></li>');
+// LINKS IN MAIN MENU - SCORING - ROSTER - CUSTOM ABILITIES
+jQuery('ul li.mm-forcommissioners ul').prepend('<li><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/home/' + league_id + '?MODULE=MESSAGE' + SetHPMability + '">Custom Abilities</a></li>');
+jQuery('.myfantasyleague_menu ul li:contains("Franchise") a:contains("Rosters")').attr("href", baseURLDynamic + "/" + year + "/home/" + league_id + "?MODULE=MESSAGE" + SetHPMroster );
+jQuery(document).ready(function () {jQuery('#hsubmenu li a:contains("Rosters")').attr("href", baseURLDynamic + "/" + year + "/home/" + league_id + "?MODULE=MESSAGE" + SetHPMroster );});
+
+jQuery('.myfantasyleague_menu ul,.MFLSkinSelection').css('visibility','visible');
 
 // MIKE ADDED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE - SEE BELOW FOR MORE EDITS DUE TO THIS
 jQuery('.myfantasyleague_menu > ul').append('<li class="has-sub sub-default" id="slide-menu-login"><a>Login</a><b aria-haspopup="true" aria-controls="p50"></b><input id="sub50" type="checkbox"><label for="sub50"><span></span></label><ul id="p50"><li class="user-login"><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/login?L=' + league_id + '">Login to league</a></li></ul></li>');
@@ -47,19 +48,14 @@ jQuery(document).ready(function() {
         url: url,
         success: function(data) {
             jQuery(data).find("#welcome td a").each(function() {
-
-				// MIKE REMOVED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE
-				//if($(this).text().indexOf("create")<0) jQuery('#slide-menu-login ul').append('<li><a class="no-sub" href="' + baseURLDynamic + '/' + year + '/login?L=' + league_id + '">Login</a></li>');
-
-				// MIKE ADDED THIS TO GET A LOGIN LINK TO SHOW WHEN NOT LOGGED INTO LEAGUE
 				jQuery('#slide-menu-login ul .user-login').remove();
-
                 jQuery('#slide-menu-login ul').append('<li><a class="no-sub" href="' + jQuery(this).attr("href") + '">' + $(this).text() + '</a></li>');
             });
         },
         async: true
     });
 });
+
 // SCRIPT TO PLACE LOGGED IN USER TABLES FIRST
 jQuery(document).ready(function () {
 var isUserLoggedIn = typeof franchise_id === 'undefined'?false:true; 
