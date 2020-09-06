@@ -11503,3 +11503,7 @@ caption span {
 .eventablerow {
     background: var(--eventablerow, #ececec)
 }
+
+#body_ajax_ls table td.ls_game_info div a, #body_ajax_ls table td.td-first-type a {
+    font-size: 14px;
+}
