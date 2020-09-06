@@ -1460,11 +1460,11 @@ th a:visited:hover {
 }
 
 .oddtablerow {
-    background: var(--oddtablerow, #f1f1f1)
+    background: var(--oddtablerow, #fff)
 }
 
 .eventablerow {
-    background: var(--eventablerow, #f8f8f8)
+    background: var(--eventablerow, #ececec)
 }
 
 .oddtablerow td,
