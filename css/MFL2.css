@@ -11515,3 +11515,7 @@ caption span {
 #LS_TopTableHolder .franchiseicon {
     max-height: auto;
 }
+
+#LS_TopTableHolder .LS_MainScoreboard td {
+    background: #fff;
+}
