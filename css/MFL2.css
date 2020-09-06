@@ -11523,3 +11523,7 @@ caption span {
 #body_ajax_ls td div[class^="pfpts"] {
     font-size: 16px;
 }
+
+#body_ajax_ls tr.td-totals-row td {
+    font-size: 16px;
+}
