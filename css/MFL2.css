@@ -11527,3 +11527,19 @@ caption span {
 #body_ajax_ls tr.td-totals-row td {
     font-size: 16px;
 }
+
+#LS_AwayScore span, #LS_HomeScore span {
+    border-width: unset;
+    border-style: unset;
+    text-align: unset;
+    position: unset;
+    width: unset;
+    display: unset;
+    font-weight: unset;
+    text-decoration: unset;
+    min-width: unset;
+    line-height: unset;
+    cursor: unset;
+    border-width: unset;
+    border-style: unset;
+}
