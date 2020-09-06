@@ -11547,3 +11547,7 @@ caption span {
 #LS_AwayScore span.blank a, #LS_HomeScore span.blank a {
     padding: unset;
 }
+
+#body_ajax_ls #other_games td.ls_og_cell {
+    font-size: 14px;
+}
