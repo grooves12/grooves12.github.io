@@ -11543,3 +11543,7 @@ caption span {
     border-width: unset;
     border-style: unset;
 }
+
+#LS_AwayScore span.blank a, #LS_HomeScore span.blank a {
+    padding: unset;
+}
