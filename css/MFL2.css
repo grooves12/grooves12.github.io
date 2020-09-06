@@ -11519,3 +11519,7 @@ caption span {
 #LS_TopTableHolder .LS_MainScoreboard td {
     background: #fff;
 }
+
+#body_ajax_ls td div[class^="pfpts"] {
+    font-size: 16px;
+}
