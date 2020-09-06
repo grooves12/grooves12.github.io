@@ -509,11 +509,6 @@
     --make-white: #fff
 }
 
-.establshed-svgtext,
-.nfltheme .bannericon,
-#logo_svg_inserticon {
-    display: none
-}
 
 .nfltheme svg.league_name {
     margin-top: -20px
@@ -523,14 +518,6 @@
     display: block
 }
 
-.nfltheme #logo_svg_inserticon {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    width: 150px;
-    height: 150px;
-    background-size: 140px 140px
-}
 
 @media only screen and (max-width: 60em) {
     .nfltheme #logo_svg_inserticon {
