@@ -11294,3 +11294,10 @@ caption span {
 #tabmenu-wrap li#tab6 a:before {
     content: "\f0cb"
 }
+
+
+/* other changes */
+#body_add_drop form .mobile-view,
+#body_add_drop form .table3 {
+    background: #fff;
+}
