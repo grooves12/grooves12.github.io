@@ -11562,3 +11562,15 @@ caption span {
     transform: unset;
     left: unset;
 }
+
+#LS_AwayScore span::after, #LS_HomeScore span::after {
+    content: unset;
+    display: unset;
+    position: unset;
+    height: unset;
+    width: unset;
+    top: unset;
+    transform: unset;
+    left: unset;
+    margin-top: unset;
+}
