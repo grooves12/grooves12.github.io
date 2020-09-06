@@ -11574,3 +11574,7 @@ caption span {
     left: unset;
     margin-top: unset;
 }
+
+#body_ajax_ls .ls_other_game td.ls_projections {
+    padding: 5px;
+}
