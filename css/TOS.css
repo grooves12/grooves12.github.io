@@ -11265,3 +11265,32 @@ caption span {
         min-width: 65px;
         }	
 }
+
+/* tab icons */
+#tabmenu-wrap li#tab0 a:before {
+    content: "\f015"
+}
+
+#tabmenu-wrap li#tab1 a:before {
+    content: "\f0d6"
+}
+
+#tabmenu-wrap li#tab2 a:before {
+    content: "\f1ea"
+}
+
+#tabmenu-wrap li#tab3 a:before {
+    content: "\f080"
+}
+
+#tabmenu-wrap li#tab4 a:before {
+    content: "\f1da"
+}
+
+#tabmenu-wrap li#tab5 a:before {
+    content: "\f091"
+}
+
+#tabmenu-wrap li#tab6 a:before {
+    content: "\f0cb"
+}
