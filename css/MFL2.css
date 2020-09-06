@@ -11507,3 +11507,6 @@ caption span {
 #body_ajax_ls table td.ls_game_info div a, #body_ajax_ls table td.td-first-type a {
     font-size: 14px;
 }
+
+#body_ajax_ls td.ls_player_stats div {
+    font-size: 12px;
