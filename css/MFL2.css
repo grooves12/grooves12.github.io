@@ -11495,3 +11495,11 @@ caption span {
 
 /* Added for Table 3 spacing */
 #body_add_drop table .table3 {table-layout: unset;}
+
+.oddtablerow {
+    background: var(--oddtablerow, #fff)
+}
+
+.eventablerow {
+    background: var(--eventablerow, #ececec)
+}
