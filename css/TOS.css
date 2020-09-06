@@ -11240,3 +11240,28 @@ body.habskin a[id*="hideAssets"]:hover {
 .hz-hide-shadow:after {
     border-right: 0
 }
+
+/*font adjustments*/
+body {font-size:14px;}
+caption,
+caption span {
+  font-family: "Roboto Slab";
+  }
+
+#MFLPlayerPopupContainer .report td {
+   font-size: 14px;
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer .MFLPlayerPopupTabContent {
+    height: 270px;
+}
+
+@media only screen and (max-width:32.000em) {
+	#standings .gb, #standings .strk, #standings .pa, #standings .bbidbalance{
+		display: none;
+	}
+        .franchiseicon {
+        max-width: 65px;
+        min-width: 65px;
+        }	
+}
