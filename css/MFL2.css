@@ -11431,6 +11431,12 @@ caption span {
   font-family: "Roboto Slab";
   }
 
+.homepagecolumn .homepagemodule caption,
+caption,
+#commissioner_setup table.two_column_layout th {
+    text-transform: unset 
+}
+
 #MFLPlayerPopupContainer .report td {
    font-size: 14px;
 }
@@ -11447,6 +11453,14 @@ caption span {
         max-width: 65px;
         min-width: 65px;
         }	
+}
+
+#body_add_drop .table2 table td {
+    font-size: 14px 
+}
+
+.mobile-view.leftS td {
+    font-size: 14px;
 }
 
 /* tab icons */
@@ -11485,14 +11499,6 @@ caption span {
     background: #fff;
 }
 
-#body_add_drop .table2 table td {
-    font-size: 14px 
-}
-
-.mobile-view.leftS td {
-    font-size: 14px;
-}
-
 /* Added for Table 3 spacing */
 #body_add_drop table .table3 {table-layout: unset;}
 
@@ -11503,6 +11509,8 @@ caption span {
 .eventablerow {
     background: var(--eventablerow, #ececec)
 }
+
+/* Scoreboard Changes */
 
 #body_ajax_ls table td.ls_game_info div a, #body_ajax_ls table td.td-first-type a {
     font-size: 14px;
