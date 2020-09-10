@@ -561,7 +561,7 @@ body.nra {
 .nfltheme .establshed-svgtext {
     display: block
 }
-
+/*
 .nfltheme #logo_svg_inserticon {
     display: block;
     background-repeat: no-repeat;
@@ -706,6 +706,7 @@ body.nra {
 .theme-vikings #logo_svg_inserticon.nfl-icon-onload {
     background-image: url(//www.nitrografixx.com/MFL-Popups/svg-nfl-logos/MIN.svg)
 }
+*/
 
 html {
     -webkit-box-sizing: border-box;
