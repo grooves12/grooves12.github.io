@@ -547,7 +547,7 @@ body.nra {
     --th-bg: #3C1E5D;
     --make-white: #fff
 }
-
+/*
 .establshed-svgtext,
 .nfltheme .bannericon,
 #logo_svg_inserticon {
@@ -561,7 +561,7 @@ body.nra {
 .nfltheme .establshed-svgtext {
     display: block
 }
-/*
+
 .nfltheme #logo_svg_inserticon {
     display: block;
     background-repeat: no-repeat;
