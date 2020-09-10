@@ -11498,3 +11498,170 @@ body.habskin a[id*="hideAssets"]:hover {
 .hz-hide-shadow:after {
     border-right: 0
 }
+
+/*font adjustments*/
+body {font-size:14px;}
+caption,
+caption span {
+  font-family: "Roboto Slab";
+  }
+
+.homepagecolumn .homepagemodule caption,
+caption,
+#commissioner_setup table.two_column_layout th {
+    text-transform: unset 
+}
+
+#MFLPlayerPopupContainer .report td {
+   font-size: 14px;
+}
+
+#MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer .MFLPlayerPopupTabContent {
+    height: 270px;
+}
+
+@media only screen and (max-width:32.000em) {
+	#standings .gb, #standings .strk, #standings .pa, #standings .bbidbalance{
+		display: none;
+	}
+        .franchiseicon {
+        max-width: 65px;
+        min-width: 65px;
+        }	
+}
+
+#body_add_drop .table2 table td {
+    font-size: 14px 
+}
+
+.mobile-view.leftS td {
+    font-size: 14px;
+}
+
+/* tab icons */
+#tabmenu-wrap li#tab0 a:before {
+    content: "\f015"
+}
+
+#tabmenu-wrap li#tab1 a:before {
+    content: "\f0d6"
+}
+
+#tabmenu-wrap li#tab2 a:before {
+    content: "\f1ea"
+}
+
+#tabmenu-wrap li#tab3 a:before {
+    content: "\f080"
+}
+
+#tabmenu-wrap li#tab4 a:before {
+    content: "\f1da"
+}
+
+#tabmenu-wrap li#tab5 a:before {
+    content: "\f091"
+}
+
+#tabmenu-wrap li#tab6 a:before {
+    content: "\f0cb"
+}
+
+
+/* other changes */
+#body_add_drop form .mobile-view,
+#body_add_drop form .table3 {
+    background: #fff;
+}
+
+.mobile-view.leftS>table,
+.mobile-view.leftS table#picker {
+    table-layout: unset
+}
+
+#body_add_drop table .table3 {table-layout: unset;}
+
+.oddtablerow {
+    background: var(--oddtablerow, #fff)
+}
+
+.eventablerow {
+    background: var(--eventablerow, #ececec)
+}
+
+/* Scoreboard Changes */
+
+#body_ajax_ls table td.ls_game_info div a, #body_ajax_ls table td.td-first-type a {
+    font-size: 14px;
+}
+
+#body_ajax_ls td.ls_player_stats div {
+    font-size: 12px;
+}
+
+#LS_TopTableHolder .franchiseicon {
+    max-height: unset;
+}
+
+#LS_TopTableHolder .LS_MainScoreboard td {
+    background: #fff;
+}
+
+#body_ajax_ls td div[class^="pfpts"] {
+    font-size: 16px;
+}
+
+#body_ajax_ls tr.td-totals-row td {
+    font-size: 16px;
+}
+
+#LS_AwayScore span, #LS_HomeScore span {
+    border-width: unset;
+    border-style: unset;
+    text-align: unset;
+    position: unset;
+    width: unset;
+    display: unset;
+    font-weight: unset;
+    text-decoration: unset;
+    min-width: unset;
+    line-height: unset;
+    cursor: unset;
+    border-width: unset;
+    border-style: unset;
+}
+
+#LS_AwayScore span.blank a, #LS_HomeScore span.blank a {
+    padding: unset;
+}
+
+#body_ajax_ls #other_games td.ls_og_cell {
+    font-size: 14px;
+}
+
+#LS_AwayScore span:before, #LS_HomeScore span:before {
+    content: unset;
+    display: unset;
+    position: unset;
+    height: unset;
+    width: unset;
+    top: unset;
+    transform: unset;
+    left: unset;
+}
+
+#LS_AwayScore span::after, #LS_HomeScore span::after {
+    content: unset;
+    display: unset;
+    position: unset;
+    height: unset;
+    width: unset;
+    top: unset;
+    transform: unset;
+    left: unset;
+    margin-top: unset;
+}
+
+#body_ajax_ls .ls_other_game td.ls_projections {
+    padding: 5px;
+}
