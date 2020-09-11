@@ -11666,3 +11666,7 @@ caption,
 #body_ajax_ls .ls_other_game td.ls_projections {
     padding: 5px;
 }
+
+#body_ajax_ls td.ls_player_stats div {
+    font-size: 14px;
+}
