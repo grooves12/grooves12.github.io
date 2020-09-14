@@ -11669,7 +11669,7 @@ caption,
 }
 
 #body_ajax_ls td.ls_player_stats div {
-    font-size: 14px;
+    font-size: unset;
 }
 
 th.warning, td.warning {
