@@ -387,7 +387,7 @@ function ls_add_icons(home) {
 					else if (franchiseDatabase["fid_" + _roadId].logo !== "")
 						$(this).find("table tr:eq(0) td:eq(0)").html('<img class="ls_og_icon" src="' + franchiseDatabase["fid_" + _roadId].logo + '" alt="' + $(this).find("table tr:eq(0) td:eq(0)").text() + '" title="' + franchiseDatabase["fid_" + _roadId].name + '" /><span class="ls_og_icon_full_name" style="display:inline-block;max-width:50px;overflow:hidden;vertical-align:middle;padding-left:4px">' + franchiseDatabase["fid_" + _roadId].name + '</span>');
 					else 
-						$(this).find("table tr:eq(0) td:eq(0)").html('<span class="ls_og_full_name" style="display:inline-block;max-width:80px;overflow:hidden">' + franchiseDatabase["fid_" + _roadId].name + '</span>');
+						$(this).find("table tr:eq(0) td:eq(0)").html('<span class="ls_og_full_name" style="display:inline-block;overflow:hidden">' + franchiseDatabase["fid_" + _roadId].name + '</span>');
 					break;
 				default: $(this).find("table tr:eq(0) td:eq(0)").html('<span class="ls_og_abbrev">' + franchiseDatabase["fid_" + _roadId].abbrev + '</span>');
 			}
@@ -399,7 +399,7 @@ function ls_add_icons(home) {
 				$(this).find("table tr:eq(1) td:eq(0)").html('<span class="ls_og_abbrev">' + franchiseDatabase["fid_" + _homeId].abbrev + '</span>');
 				break;
 			case 1: //FULL NAME
-				$(this).find("table tr:eq(1) td:eq(0)").html('<span class="ls_og_full_name" style="display:inline-block;max-width:80px;overflow:hidden">' + franchiseDatabase["fid_" + _homeId].name + '</span>');
+				$(this).find("table tr:eq(1) td:eq(0)").html('<span class="ls_og_full_name" style="display:inline-block;overflow:hidden">' + franchiseDatabase["fid_" + _homeId].name + '</span>');
 				break;
 			case 2: //ICON ON FAIL USE LOGO ON FAIL USE ABBREV
 				if (franchiseDatabase["fid_" + _homeId].icon !== "")
@@ -423,7 +423,7 @@ function ls_add_icons(home) {
 				else if (franchiseDatabase["fid_" + _homeId].logo !== "")
 					$(this).find("table tr:eq(1) td:eq(0)").html('<img class="ls_og_icon" src="' + franchiseDatabase["fid_" + _homeId].logo + '" alt="' + $(this).find("table tr:eq(1) td:eq(0)").text() + '" title="' + franchiseDatabase["fid_" + _homeId].name + '" /><span class="ls_og_icon_full_name" style="display:inline-block;max-width:50px;overflow:hidden;vertical-align:middle;padding-left:4px">' + franchiseDatabase["fid_" + _homeId].name + '</span>');
 				else 
-					$(this).find("table tr:eq(1) td:eq(0)").html('<span class="ls_og_full_name" style="display:inline-block;max-width:80px;overflow:hidden">' + franchiseDatabase["fid_" + _homeId].name + '</span>');
+					$(this).find("table tr:eq(1) td:eq(0)").html('<span class="ls_og_full_name" style="display:inline-block;overflow:hidden">' + franchiseDatabase["fid_" + _homeId].name + '</span>');
 				break;
 			default: $(this).find("table tr:eq(1) td:eq(0)").html('<span class="ls_og_abbrev">' + franchiseDatabase["fid_" + _homeId].abbrev + '</span>');
 		}
