@@ -1,4 +1,4 @@
-jQuery.get("//nitrografixx.com/SVGICONS/images/sprites.svg?version=2", function(data) {
+jQuery.get("https://www.mflscripts.com/mfl-svg/images/sprites.svg", function(data) {
   var div = document.createElement("div");
   div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
   document.body.insertBefore(div, document.body.childNodes[0]);
