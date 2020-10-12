@@ -11672,8 +11672,11 @@ th.warning, td.warning {
     background: unset;
 }
 
-/*bar chart*/
 #bar_chart td {
     padding: 6px 0px;}
 #bar_chart table {
     width: auto;}
+
+table#fantasy_articles {
+    width: unset;
+}
