@@ -353,31 +353,6 @@ jQuery('#body_add_drop table.table3 tr:last-of-type td[colspan]').attr('colspan'
 jQuery('#body_add_drop .adddrop-lasttd').prev().remove();
 jQuery('#body_add_drop .adddrop-lasttd').next().remove();
 
-if(document.getElementById("body_add_drop")) {
-	function hideAllFilters(toggleThis){
-		if(toggleThis===undefined) {
-			jQuery('#custom-filter-name').hide();
-			jQuery('#custom-filter-nfl').hide();
-			jQuery('#custom-filter-pos').hide();
-		} else {
-			if(toggleThis==="#custom-filter-name") {jQuery('#custom-filter-name').toggle(); jQuery('#custom-filter-nfl').hide(); jQuery('#custom-filter-pos').hide();}
-			if(toggleThis==="#custom-filter-nfl")  {jQuery('#custom-filter-name').hide(); jQuery('#custom-filter-nfl').toggle(); jQuery('#custom-filter-pos').hide();}
-			if(toggleThis==="#custom-filter-pos")  {jQuery('#custom-filter-name').hide(); jQuery('#custom-filter-nfl').hide(); jQuery('#custom-filter-pos').toggle();}
-		}
-	}
-	//MOVE FILTERS TO HEADER
-	nameFilter = '<div id="custom-filter-name" style="display:none; overflow:visible!important;padding:3px;background:var(--accent,#B82601);border-radius: 3px; position:absolute; min-width:auto; left:-35px; top:-34px; z-index:1;width:106px!important">'+jQuery('#add_filt_name').clone().wrap('<p>').parent().html()+'</div>';
-	nflFilter  = '<div id="custom-filter-nfl" style="display:none; overflow:visible!important;padding:3px;background:var(--accent,#B82601);border-radius: 3px; position:absolute; min-width:auto; left:-53px; top:-34px; z-index:1;width:106px!important">'+jQuery('#add_filt_nfl').clone().wrap('<p>').parent().html()+'</div>';
-	posFilter  = '<div id="custom-filter-pos" style="display:none; overflow:visible!important;padding:3px;background:var(--accent,#B82601);border-radius: 3px; position:absolute; min-width:auto; left:-53px; top:-34px; z-index:1;width:106px!important">'+jQuery('#add_filt_pos').clone().wrap('<p>').parent().html()+'</div>';
-	nflFilter  = nflFilter.replace( "picker_filter('add')","picker_filter('add');hideAllFilters()");
-	posFilter  = posFilter.replace( "picker_filter('add')","picker_filter('add');hideAllFilters()");
-	jQuery('#body_add_drop .table2-sub1 tr.head-th td.waiv-name').append('<span style="position:relative">'+nameFilter+'<span style="padding-left:6px;cursor:pointer"><i class="fa fa-search" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-name\')"></i></span></span>');
-	jQuery('#body_add_drop .table2-sub1 tr.head-th td.waiv-team').append('<span style="position:relative">'+nflFilter +'<span style="padding-left:3px;cursor:pointer"><i class="fa fa-filter" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-nfl\' )"></i></span></span>');
-	jQuery('#body_add_drop .table2-sub1 tr.head-th td.waiv-pos').append('<span style="position:relative">'+posFilter +'<span style="padding-left:3px;cursor:pointer"><i class="fa fa-filter" aria-hidden="true" onclick="hideAllFilters(\'#custom-filter-pos\' )"></i></span></span>');
-	jQuery('#body_add_drop .table2-sub1 td:contains("Filter by")').html("");
-	//jQuery('#body_add_drop .table2-sub1 td:contains("Locked Player")').html('* Locked Player (<a href="locked_players?L='+league_id+'" target="_blank">See Details</a>)');
-}
-
 // ADD CLASSES TO ADD-DROP FIRST TABLE
 jQuery('#waiver_request_list').addClass('waiver-settings');
 jQuery('#waiver_request_list:has("td.points")').removeClass('waiver-settings').addClass('bbid-settings');
