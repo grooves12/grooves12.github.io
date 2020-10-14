@@ -11502,10 +11502,11 @@ body.habskin a[id*="hideAssets"]:hover {
 
 /*font adjustments*/
 body {font-size:14px;}
-caption,
+/*caption,
 caption span {
   font-family: "Roboto Slab";
   }
+*/
 
 .homepagecolumn .homepagemodule caption,
 caption,
