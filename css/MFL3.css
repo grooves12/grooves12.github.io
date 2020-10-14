@@ -11678,6 +11678,6 @@ th.warning, td.warning {
 #bar_chart table {
     width: auto;}
 
-table#fantasy_articles {
+table.articlepicturetable {
     width: unset;
 }
