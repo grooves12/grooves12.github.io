@@ -3423,8 +3423,8 @@ ul.MFLPlayerPopupTab li a:hover {
 }
 
 #MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer {
-  height: 412px;
-  max-height: 412px;
+  height: 500px;
+  max-height: 500px;
 }
 
 #MFLPlayerPopupContainer.MFLPlayerPopupArticleContainer {
